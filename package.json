@@ -6,7 +6,7 @@
   "types": "dist/types/main.d.ts",
   "scripts": {
     "dev": "esbuild src/index.ts --bundle --outfile=dist/bundle.js --servedir=.",
-    "build:demo": "esbuild src/index.ts --bundle --outfile=dist/bundle.js --minify --drop:console",
+    "build:demo": "esbuild src/index.ts --bundle --outfile=public/bundle.js --minify --drop:console",
     "build": "npm run build:ts && esbuild src/main.ts --bundle --outfile=dist/obsigraph.js --format=esm --minify --drop:console",
     "build:browser": "esbuild src/main.ts --bundle --outfile=dist/obsigraph.browser.js --format=iife --global-name=ObsiGraph --minify --drop:console",
     "build:ts": "tsc --project tsconfig.json",

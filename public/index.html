@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ObsiGraph</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+        body {
+            background-color: #0d1117;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 100%;
+        }
+        .graph-container {
+            flex-grow: 1; 
+            width: 100%; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #graph-network {
+            display: block;
+            width: 1000px;
+            height: 800px;
+        }
+        .controls {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin-top: 20px;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: #ffffff;">ObsiGraph</h1>
+
+    <div class="graph-container">
+        <canvas id="graph-network"></canvas>
+    </div>
+
+    <div class="controls">
+        <button onmousedown="obsigraph.zoomIn(1.1)">Zoom In</button>
+        <button onmousedown="obsigraph.zoomOut(0.9)">Zoom Out</button>
+        <button onmousedown="obsigraph.zoomToFit()">Zoom to Fit</button>
+        <button onmousedown="obsigraph.removeOrphanNodes()">Remove Orphans</button>
+        <button onmousedown="obsigraph.setTheme('dark')">Dark Mode</button>
+        <button onmousedown="obsigraph.setTheme('light')">Light Mode</button>
+    </div>
+    <script>
+        window.addEventListener('resize', () => {
+            obsigraph.resize();
+        });
+        window.addEventListener('beforeunload', () => {
+            obsigraph.destroy();
+        });
+ 
+    </script>
+
+    <script src="bundle.js" type="module"></script>
+</body>
+</html>
