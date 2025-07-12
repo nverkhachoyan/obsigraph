@@ -76,7 +76,7 @@ export default class ObsiGraph implements ObsiGraphType {
     this.cullingEnabled = this.options.culling!.enabled;
     
     this.nodes = nodes.map(d => ({ ...d, size: 0 }));
-    this.edges = edges.map(d => ({ source: d.from, target: d.to }));
+    this.edges = edges;
 
     this.init();
   }
@@ -512,8 +512,6 @@ export default class ObsiGraph implements ObsiGraphType {
       const graphics = this.nodeGraphics.get(node.id);
       const label = this.nodeLabels.get(node.id);
       const isVisible = this.cullingEnabled ? this.visibleNodes.has(node.id) : true;
-     
-
       
       if (graphics) {
         graphics.visible = isVisible;

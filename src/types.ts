@@ -18,8 +18,6 @@ export interface Node extends SimulationNodeDatum {
 export interface Edge extends SimulationLinkDatum<Node> {
   source: number | string | Node;
   target: number | string | Node;
-  from?: number;
-  to?: number;
 }
 
 export interface Graph {

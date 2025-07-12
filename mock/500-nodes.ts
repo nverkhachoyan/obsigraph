@@ -592,317 +592,317 @@ export const graph = {
     { id: 549, label: "Linear Algebra Sub-Topic 7", url: "https://cs-topics.org/computer-science-overview" },
   ],
   edges: [
-    // Parent-Child Connections (Category Header to Sub-Topics)
-    { from: 1, to: 21 }, { from: 1, to: 22 }, { from: 1, to: 23 }, { from: 1, to: 24 }, { from: 1, to: 25 },
-    { from: 1, to: 26 }, { from: 1, to: 27 }, { from: 1, to: 28 }, { from: 1, to: 29 }, { from: 1, to: 30 },
-    { from: 1, to: 31 }, { from: 1, to: 32 }, { from: 1, to: 33 }, { from: 1, to: 34 }, { from: 1, to: 35 },
-    { from: 1, to: 36 }, { from: 1, to: 37 }, { from: 1, to: 38 }, { from: 1, to: 39 }, { from: 1, to: 40 },
-    { from: 1, to: 41 }, { from: 1, to: 42 }, { from: 1, to: 43 }, { from: 1, to: 44 }, { from: 1, to: 45 },
+    // Parent-Child Connections (Category Header target Sub-Topics)
+    { source: 1, target: 21 }, { source: 1, target: 22 }, { source: 1, target: 23 }, { source: 1, target: 24 }, { source: 1, target: 25 },
+    { source: 1, target: 26 }, { source: 1, target: 27 }, { source: 1, target: 28 }, { source: 1, target: 29 }, { source: 1, target: 30 },
+    { source: 1, target: 31 }, { source: 1, target: 32 }, { source: 1, target: 33 }, { source: 1, target: 34 }, { source: 1, target: 35 },
+    { source: 1, target: 36 }, { source: 1, target: 37 }, { source: 1, target: 38 }, { source: 1, target: 39 }, { source: 1, target: 40 },
+    { source: 1, target: 41 }, { source: 1, target: 42 }, { source: 1, target: 43 }, { source: 1, target: 44 }, { source: 1, target: 45 },
 
-    { from: 2, to: 46 }, { from: 2, to: 47 }, { from: 2, to: 48 }, { from: 2, to: 49 }, { from: 2, to: 50 },
-    { from: 2, to: 51 }, { from: 2, to: 52 }, { from: 2, to: 53 }, { from: 2, to: 54 }, { from: 2, to: 55 },
-    { from: 2, to: 56 }, { from: 2, to: 57 }, { from: 2, to: 58 }, { from: 2, to: 59 }, { from: 2, to: 60 },
-    { from: 2, to: 61 }, { from: 2, to: 62 }, { from: 2, to: 63 }, { from: 2, to: 64 }, { from: 2, to: 65 },
-    { from: 2, to: 66 }, { from: 2, to: 67 }, { from: 2, to: 68 }, { from: 2, to: 69 }, { from: 2, to: 70 },
+    { source: 2, target: 46 }, { source: 2, target: 47 }, { source: 2, target: 48 }, { source: 2, target: 49 }, { source: 2, target: 50 },
+    { source: 2, target: 51 }, { source: 2, target: 52 }, { source: 2, target: 53 }, { source: 2, target: 54 }, { source: 2, target: 55 },
+    { source: 2, target: 56 }, { source: 2, target: 57 }, { source: 2, target: 58 }, { source: 2, target: 59 }, { source: 2, target: 60 },
+    { source: 2, target: 61 }, { source: 2, target: 62 }, { source: 2, target: 63 }, { source: 2, target: 64 }, { source: 2, target: 65 },
+    { source: 2, target: 66 }, { source: 2, target: 67 }, { source: 2, target: 68 }, { source: 2, target: 69 }, { source: 2, target: 70 },
 
-    { from: 3, to: 71 }, { from: 3, to: 72 }, { from: 3, to: 73 }, { from: 3, to: 74 }, { from: 3, to: 75 },
-    { from: 3, to: 76 }, { from: 3, to: 77 }, { from: 3, to: 78 }, { from: 3, to: 79 }, { from: 3, to: 80 },
-    { from: 3, to: 81 }, { from: 3, to: 82 }, { from: 3, to: 83 }, { from: 3, to: 84 }, { from: 3, to: 85 },
-    { from: 3, to: 86 }, { from: 3, to: 87 }, { from: 3, to: 88 }, { from: 3, to: 89 }, { from: 3, to: 90 },
-    { from: 3, to: 91 }, { from: 3, to: 92 }, { from: 3, to: 93 }, { from: 3, to: 94 }, { from: 3, to: 95 },
+    { source: 3, target: 71 }, { source: 3, target: 72 }, { source: 3, target: 73 }, { source: 3, target: 74 }, { source: 3, target: 75 },
+    { source: 3, target: 76 }, { source: 3, target: 77 }, { source: 3, target: 78 }, { source: 3, target: 79 }, { source: 3, target: 80 },
+    { source: 3, target: 81 }, { source: 3, target: 82 }, { source: 3, target: 83 }, { source: 3, target: 84 }, { source: 3, target: 85 },
+    { source: 3, target: 86 }, { source: 3, target: 87 }, { source: 3, target: 88 }, { source: 3, target: 89 }, { source: 3, target: 90 },
+    { source: 3, target: 91 }, { source: 3, target: 92 }, { source: 3, target: 93 }, { source: 3, target: 94 }, { source: 3, target: 95 },
 
-    { from: 4, to: 96 }, { from: 4, to: 97 }, { from: 4, to: 98 }, { from: 4, to: 99 }, { from: 4, to: 100 },
-    { from: 4, to: 101 }, { from: 4, to: 102 }, { from: 4, to: 103 }, { from: 4, to: 104 }, { from: 4, to: 105 },
-    { from: 4, to: 106 }, { from: 4, to: 107 }, { from: 4, to: 108 }, { from: 4, to: 109 }, { from: 4, to: 110 },
-    { from: 4, to: 111 }, { from: 4, to: 112 }, { from: 4, to: 113 }, { from: 4, to: 114 }, { from: 4, to: 115 },
-    { from: 4, to: 116 }, { from: 4, to: 117 }, { from: 4, to: 118 }, { from: 4, to: 119 }, { from: 4, to: 120 },
+    { source: 4, target: 96 }, { source: 4, target: 97 }, { source: 4, target: 98 }, { source: 4, target: 99 }, { source: 4, target: 100 },
+    { source: 4, target: 101 }, { source: 4, target: 102 }, { source: 4, target: 103 }, { source: 4, target: 104 }, { source: 4, target: 105 },
+    { source: 4, target: 106 }, { source: 4, target: 107 }, { source: 4, target: 108 }, { source: 4, target: 109 }, { source: 4, target: 110 },
+    { source: 4, target: 111 }, { source: 4, target: 112 }, { source: 4, target: 113 }, { source: 4, target: 114 }, { source: 4, target: 115 },
+    { source: 4, target: 116 }, { source: 4, target: 117 }, { source: 4, target: 118 }, { source: 4, target: 119 }, { source: 4, target: 120 },
 
-    { from: 5, to: 121 }, { from: 5, to: 122 }, { from: 5, to: 123 }, { from: 5, to: 124 }, { from: 5, to: 125 },
-    { from: 5, to: 126 }, { from: 5, to: 127 }, { from: 5, to: 128 }, { from: 5, to: 129 }, { from: 5, to: 130 },
-    { from: 5, to: 131 }, { from: 5, to: 132 }, { from: 5, to: 133 }, { from: 5, to: 134 }, { from: 5, to: 135 },
-    { from: 5, to: 136 }, { from: 5, to: 137 }, { from: 5, to: 138 }, { from: 5, to: 139 }, { from: 5, to: 140 },
-    { from: 5, to: 141 }, { from: 5, to: 142 }, { from: 5, to: 143 }, { from: 5, to: 144 }, { from: 5, to: 145 },
+    { source: 5, target: 121 }, { source: 5, target: 122 }, { source: 5, target: 123 }, { source: 5, target: 124 }, { source: 5, target: 125 },
+    { source: 5, target: 126 }, { source: 5, target: 127 }, { source: 5, target: 128 }, { source: 5, target: 129 }, { source: 5, target: 130 },
+    { source: 5, target: 131 }, { source: 5, target: 132 }, { source: 5, target: 133 }, { source: 5, target: 134 }, { source: 5, target: 135 },
+    { source: 5, target: 136 }, { source: 5, target: 137 }, { source: 5, target: 138 }, { source: 5, target: 139 }, { source: 5, target: 140 },
+    { source: 5, target: 141 }, { source: 5, target: 142 }, { source: 5, target: 143 }, { source: 5, target: 144 }, { source: 5, target: 145 },
 
-    { from: 6, to: 146 }, { from: 6, to: 147 }, { from: 6, to: 148 }, { from: 6, to: 149 }, { from: 6, to: 150 },
-    { from: 6, to: 151 }, { from: 6, to: 152 }, { from: 6, to: 153 }, { from: 6, to: 154 }, { from: 6, to: 155 },
-    { from: 6, to: 156 }, { from: 6, to: 157 }, { from: 6, to: 158 }, { from: 6, to: 159 }, { from: 6, to: 160 },
-    { from: 6, to: 161 }, { from: 6, to: 162 }, { from: 6, to: 163 }, { from: 6, to: 164 }, { from: 6, to: 165 },
-    { from: 6, to: 166 }, { from: 6, to: 167 }, { from: 6, to: 168 }, { from: 6, to: 169 }, { from: 6, to: 170 },
+    { source: 6, target: 146 }, { source: 6, target: 147 }, { source: 6, target: 148 }, { source: 6, target: 149 }, { source: 6, target: 150 },
+    { source: 6, target: 151 }, { source: 6, target: 152 }, { source: 6, target: 153 }, { source: 6, target: 154 }, { source: 6, target: 155 },
+    { source: 6, target: 156 }, { source: 6, target: 157 }, { source: 6, target: 158 }, { source: 6, target: 159 }, { source: 6, target: 160 },
+    { source: 6, target: 161 }, { source: 6, target: 162 }, { source: 6, target: 163 }, { source: 6, target: 164 }, { source: 6, target: 165 },
+    { source: 6, target: 166 }, { source: 6, target: 167 }, { source: 6, target: 168 }, { source: 6, target: 169 }, { source: 6, target: 170 },
 
-    { from: 7, to: 171 }, { from: 7, to: 172 }, { from: 7, to: 173 }, { from: 7, to: 174 }, { from: 7, to: 175 },
-    { from: 7, to: 176 }, { from: 7, to: 177 }, { from: 7, to: 178 }, { from: 7, to: 179 }, { from: 7, to: 180 },
-    { from: 7, to: 181 }, { from: 7, to: 182 }, { from: 7, to: 183 }, { from: 7, to: 184 }, { from: 7, to: 185 },
-    { from: 7, to: 186 }, { from: 7, to: 187 }, { from: 7, to: 188 }, { from: 7, to: 189 }, { from: 7, to: 190 },
-    { from: 7, to: 191 }, { from: 7, to: 192 }, { from: 7, to: 193 }, { from: 7, to: 194 }, { from: 7, to: 195 },
+    { source: 7, target: 171 }, { source: 7, target: 172 }, { source: 7, target: 173 }, { source: 7, target: 174 }, { source: 7, target: 175 },
+    { source: 7, target: 176 }, { source: 7, target: 177 }, { source: 7, target: 178 }, { source: 7, target: 179 }, { source: 7, target: 180 },
+    { source: 7, target: 181 }, { source: 7, target: 182 }, { source: 7, target: 183 }, { source: 7, target: 184 }, { source: 7, target: 185 },
+    { source: 7, target: 186 }, { source: 7, target: 187 }, { source: 7, target: 188 }, { source: 7, target: 189 }, { source: 7, target: 190 },
+    { source: 7, target: 191 }, { source: 7, target: 192 }, { source: 7, target: 193 }, { source: 7, target: 194 }, { source: 7, target: 195 },
 
-    { from: 8, to: 196 }, { from: 8, to: 197 }, { from: 8, to: 198 }, { from: 8, to: 199 }, { from: 8, to: 200 },
-    { from: 8, to: 201 }, { from: 8, to: 202 }, { from: 8, to: 203 }, { from: 8, to: 204 }, { from: 8, to: 205 },
-    { from: 8, to: 206 }, { from: 8, to: 207 }, { from: 8, to: 208 }, { from: 8, to: 209 }, { from: 8, to: 210 },
-    { from: 8, to: 211 }, { from: 8, to: 212 }, { from: 8, to: 213 }, { from: 8, to: 214 }, { from: 8, to: 215 },
-    { from: 8, to: 216 }, { from: 8, to: 217 }, { from: 8, to: 218 }, { from: 8, to: 219 }, { from: 8, to: 220 },
+    { source: 8, target: 196 }, { source: 8, target: 197 }, { source: 8, target: 198 }, { source: 8, target: 199 }, { source: 8, target: 200 },
+    { source: 8, target: 201 }, { source: 8, target: 202 }, { source: 8, target: 203 }, { source: 8, target: 204 }, { source: 8, target: 205 },
+    { source: 8, target: 206 }, { source: 8, target: 207 }, { source: 8, target: 208 }, { source: 8, target: 209 }, { source: 8, target: 210 },
+    { source: 8, target: 211 }, { source: 8, target: 212 }, { source: 8, target: 213 }, { source: 8, target: 214 }, { source: 8, target: 215 },
+    { source: 8, target: 216 }, { source: 8, target: 217 }, { source: 8, target: 218 }, { source: 8, target: 219 }, { source: 8, target: 220 },
 
-    { from: 9, to: 221 }, { from: 9, to: 222 }, { from: 9, to: 223 }, { from: 9, to: 224 }, { from: 9, to: 225 },
-    { from: 9, to: 226 }, { from: 9, to: 227 }, { from: 9, to: 228 }, { from: 9, to: 229 }, { from: 9, to: 230 },
-    { from: 9, to: 231 }, { from: 9, to: 232 }, { from: 9, to: 233 }, { from: 9, to: 234 }, { from: 9, to: 235 },
-    { from: 9, to: 236 }, { from: 9, to: 237 }, { from: 9, to: 238 }, { from: 9, to: 239 }, { from: 9, to: 240 },
-    { from: 9, to: 241 }, { from: 9, to: 242 }, { from: 9, to: 243 }, { from: 9, to: 244 }, { from: 9, to: 245 },
+    { source: 9, target: 221 }, { source: 9, target: 222 }, { source: 9, target: 223 }, { source: 9, target: 224 }, { source: 9, target: 225 },
+    { source: 9, target: 226 }, { source: 9, target: 227 }, { source: 9, target: 228 }, { source: 9, target: 229 }, { source: 9, target: 230 },
+    { source: 9, target: 231 }, { source: 9, target: 232 }, { source: 9, target: 233 }, { source: 9, target: 234 }, { source: 9, target: 235 },
+    { source: 9, target: 236 }, { source: 9, target: 237 }, { source: 9, target: 238 }, { source: 9, target: 239 }, { source: 9, target: 240 },
+    { source: 9, target: 241 }, { source: 9, target: 242 }, { source: 9, target: 243 }, { source: 9, target: 244 }, { source: 9, target: 245 },
 
-    { from: 10, to: 246 }, { from: 10, to: 247 }, { from: 10, to: 248 }, { from: 10, to: 249 }, { from: 10, to: 250 },
-    { from: 10, to: 251 }, { from: 10, to: 252 }, { from: 10, to: 253 }, { from: 10, to: 254 }, { from: 10, to: 255 },
-    { from: 10, to: 256 }, { from: 10, to: 257 }, { from: 10, to: 258 }, { from: 10, to: 259 }, { from: 10, to: 260 },
-    { from: 10, to: 261 }, { from: 10, to: 262 }, { from: 10, to: 263 }, { from: 10, to: 264 }, { from: 10, to: 265 },
-    { from: 10, to: 266 }, { from: 10, to: 267 }, { from: 10, to: 268 }, { from: 10, to: 269 }, { from: 10, to: 270 },
+    { source: 10, target: 246 }, { source: 10, target: 247 }, { source: 10, target: 248 }, { source: 10, target: 249 }, { source: 10, target: 250 },
+    { source: 10, target: 251 }, { source: 10, target: 252 }, { source: 10, target: 253 }, { source: 10, target: 254 }, { source: 10, target: 255 },
+    { source: 10, target: 256 }, { source: 10, target: 257 }, { source: 10, target: 258 }, { source: 10, target: 259 }, { source: 10, target: 260 },
+    { source: 10, target: 261 }, { source: 10, target: 262 }, { source: 10, target: 263 }, { source: 10, target: 264 }, { source: 10, target: 265 },
+    { source: 10, target: 266 }, { source: 10, target: 267 }, { source: 10, target: 268 }, { source: 10, target: 269 }, { source: 10, target: 270 },
 
-    { from: 11, to: 271 }, { from: 11, to: 272 }, { from: 11, to: 273 }, { from: 11, to: 274 }, { from: 11, to: 275 },
-    { from: 11, to: 276 }, { from: 11, to: 277 }, { from: 11, to: 278 }, { from: 11, to: 279 }, { from: 11, to: 280 },
-    { from: 11, to: 281 }, { from: 11, to: 282 }, { from: 11, to: 283 }, { from: 11, to: 284 }, { from: 11, to: 285 },
-    { from: 11, to: 286 }, { from: 11, to: 287 }, { from: 11, to: 288 }, { from: 11, to: 289 }, { from: 11, to: 290 },
-    { from: 11, to: 291 }, { from: 11, to: 292 }, { from: 11, to: 293 }, { from: 11, to: 294 }, { from: 11, to: 295 },
+    { source: 11, target: 271 }, { source: 11, target: 272 }, { source: 11, target: 273 }, { source: 11, target: 274 }, { source: 11, target: 275 },
+    { source: 11, target: 276 }, { source: 11, target: 277 }, { source: 11, target: 278 }, { source: 11, target: 279 }, { source: 11, target: 280 },
+    { source: 11, target: 281 }, { source: 11, target: 282 }, { source: 11, target: 283 }, { source: 11, target: 284 }, { source: 11, target: 285 },
+    { source: 11, target: 286 }, { source: 11, target: 287 }, { source: 11, target: 288 }, { source: 11, target: 289 }, { source: 11, target: 290 },
+    { source: 11, target: 291 }, { source: 11, target: 292 }, { source: 11, target: 293 }, { source: 11, target: 294 }, { source: 11, target: 295 },
 
-    { from: 12, to: 296 }, { from: 12, to: 297 }, { from: 12, to: 298 }, { from: 12, to: 299 }, { from: 12, to: 300 },
-    { from: 12, to: 301 }, { from: 12, to: 302 }, { from: 12, to: 303 }, { from: 12, to: 304 }, { from: 12, to: 305 },
-    { from: 12, to: 306 }, { from: 12, to: 307 }, { from: 12, to: 308 }, { from: 12, to: 309 }, { from: 12, to: 310 },
-    { from: 12, to: 311 }, { from: 12, to: 312 }, { from: 12, to: 313 }, { from: 12, to: 314 }, { from: 12, to: 315 },
-    { from: 12, to: 316 }, { from: 12, to: 317 }, { from: 12, to: 318 }, { from: 12, to: 319 }, { from: 12, to: 320 },
+    { source: 12, target: 296 }, { source: 12, target: 297 }, { source: 12, target: 298 }, { source: 12, target: 299 }, { source: 12, target: 300 },
+    { source: 12, target: 301 }, { source: 12, target: 302 }, { source: 12, target: 303 }, { source: 12, target: 304 }, { source: 12, target: 305 },
+    { source: 12, target: 306 }, { source: 12, target: 307 }, { source: 12, target: 308 }, { source: 12, target: 309 }, { source: 12, target: 310 },
+    { source: 12, target: 311 }, { source: 12, target: 312 }, { source: 12, target: 313 }, { source: 12, target: 314 }, { source: 12, target: 315 },
+    { source: 12, target: 316 }, { source: 12, target: 317 }, { source: 12, target: 318 }, { source: 12, target: 319 }, { source: 12, target: 320 },
 
-    { from: 13, to: 321 }, { from: 13, to: 322 }, { from: 13, to: 323 }, { from: 13, to: 324 }, { from: 13, to: 325 },
-    { from: 13, to: 326 }, { from: 13, to: 327 }, { from: 13, to: 328 }, { from: 13, to: 329 }, { from: 13, to: 330 },
-    { from: 13, to: 331 }, { from: 13, to: 332 }, { from: 13, to: 333 }, { from: 13, to: 334 }, { from: 13, to: 335 },
-    { from: 13, to: 336 }, { from: 13, to: 337 }, { from: 13, to: 338 }, { from: 13, to: 339 }, { from: 13, to: 340 },
-    { from: 13, to: 341 }, { from: 13, to: 342 }, { from: 13, to: 343 }, { from: 13, to: 344 }, { from: 13, to: 345 },
+    { source: 13, target: 321 }, { source: 13, target: 322 }, { source: 13, target: 323 }, { source: 13, target: 324 }, { source: 13, target: 325 },
+    { source: 13, target: 326 }, { source: 13, target: 327 }, { source: 13, target: 328 }, { source: 13, target: 329 }, { source: 13, target: 330 },
+    { source: 13, target: 331 }, { source: 13, target: 332 }, { source: 13, target: 333 }, { source: 13, target: 334 }, { source: 13, target: 335 },
+    { source: 13, target: 336 }, { source: 13, target: 337 }, { source: 13, target: 338 }, { source: 13, target: 339 }, { source: 13, target: 340 },
+    { source: 13, target: 341 }, { source: 13, target: 342 }, { source: 13, target: 343 }, { source: 13, target: 344 }, { source: 13, target: 345 },
 
-    { from: 14, to: 346 }, { from: 14, to: 347 }, { from: 14, to: 348 }, { from: 14, to: 349 }, { from: 14, to: 350 },
-    { from: 14, to: 351 }, { from: 14, to: 352 }, { from: 14, to: 353 }, { from: 14, to: 354 }, { from: 14, to: 355 },
-    { from: 14, to: 356 }, { from: 14, to: 357 }, { from: 14, to: 358 }, { from: 14, to: 359 }, { from: 14, to: 360 },
-    { from: 14, to: 361 }, { from: 14, to: 362 }, { from: 14, to: 363 }, { from: 14, to: 364 }, { from: 14, to: 365 },
-    { from: 14, to: 366 }, { from: 14, to: 367 }, { from: 14, to: 368 }, { from: 14, to: 369 }, { from: 14, to: 370 },
+    { source: 14, target: 346 }, { source: 14, target: 347 }, { source: 14, target: 348 }, { source: 14, target: 349 }, { source: 14, target: 350 },
+    { source: 14, target: 351 }, { source: 14, target: 352 }, { source: 14, target: 353 }, { source: 14, target: 354 }, { source: 14, target: 355 },
+    { source: 14, target: 356 }, { source: 14, target: 357 }, { source: 14, target: 358 }, { source: 14, target: 359 }, { source: 14, target: 360 },
+    { source: 14, target: 361 }, { source: 14, target: 362 }, { source: 14, target: 363 }, { source: 14, target: 364 }, { source: 14, target: 365 },
+    { source: 14, target: 366 }, { source: 14, target: 367 }, { source: 14, target: 368 }, { source: 14, target: 369 }, { source: 14, target: 370 },
 
-    { from: 15, to: 371 }, { from: 15, to: 372 }, { from: 15, to: 373 }, { from: 15, to: 374 }, { from: 15, to: 375 },
-    { from: 15, to: 376 }, { from: 15, to: 377 }, { from: 15, to: 378 }, { from: 15, to: 379 }, { from: 15, to: 380 },
-    { from: 15, to: 381 }, { from: 15, to: 382 }, { from: 15, to: 383 }, { from: 15, to: 384 }, { from: 15, to: 385 },
-    { from: 15, to: 386 }, { from: 15, to: 387 }, { from: 15, to: 388 }, { from: 15, to: 389 }, { from: 15, to: 390 },
-    { from: 15, to: 391 }, { from: 15, to: 392 }, { from: 15, to: 393 }, { from: 15, to: 394 }, { from: 15, to: 395 },
+    { source: 15, target: 371 }, { source: 15, target: 372 }, { source: 15, target: 373 }, { source: 15, target: 374 }, { source: 15, target: 375 },
+    { source: 15, target: 376 }, { source: 15, target: 377 }, { source: 15, target: 378 }, { source: 15, target: 379 }, { source: 15, target: 380 },
+    { source: 15, target: 381 }, { source: 15, target: 382 }, { source: 15, target: 383 }, { source: 15, target: 384 }, { source: 15, target: 385 },
+    { source: 15, target: 386 }, { source: 15, target: 387 }, { source: 15, target: 388 }, { source: 15, target: 389 }, { source: 15, target: 390 },
+    { source: 15, target: 391 }, { source: 15, target: 392 }, { source: 15, target: 393 }, { source: 15, target: 394 }, { source: 15, target: 395 },
 
-    { from: 16, to: 396 }, { from: 16, to: 397 }, { from: 16, to: 398 }, { from: 16, to: 399 }, { from: 16, to: 400 },
-    { from: 16, to: 401 }, { from: 16, to: 402 }, { from: 16, to: 403 }, { from: 16, to: 404 }, { from: 16, to: 405 },
-    { from: 16, to: 406 }, { from: 16, to: 407 }, { from: 16, to: 408 }, { from: 16, to: 409 }, { from: 16, to: 410 },
-    { from: 16, to: 411 }, { from: 16, to: 412 }, { from: 16, to: 413 }, { from: 16, to: 414 }, { from: 16, to: 415 },
-    { from: 16, to: 416 }, { from: 16, to: 417 }, { from: 16, to: 418 }, { from: 16, to: 419 }, { from: 16, to: 420 },
+    { source: 16, target: 396 }, { source: 16, target: 397 }, { source: 16, target: 398 }, { source: 16, target: 399 }, { source: 16, target: 400 },
+    { source: 16, target: 401 }, { source: 16, target: 402 }, { source: 16, target: 403 }, { source: 16, target: 404 }, { source: 16, target: 405 },
+    { source: 16, target: 406 }, { source: 16, target: 407 }, { source: 16, target: 408 }, { source: 16, target: 409 }, { source: 16, target: 410 },
+    { source: 16, target: 411 }, { source: 16, target: 412 }, { source: 16, target: 413 }, { source: 16, target: 414 }, { source: 16, target: 415 },
+    { source: 16, target: 416 }, { source: 16, target: 417 }, { source: 16, target: 418 }, { source: 16, target: 419 }, { source: 16, target: 420 },
 
-    { from: 17, to: 421 }, { from: 17, to: 422 }, { from: 17, to: 423 }, { from: 17, to: 424 }, { from: 17, to: 425 },
-    { from: 17, to: 426 }, { from: 17, to: 427 }, { from: 17, to: 428 }, { from: 17, to: 429 }, { from: 17, to: 430 },
-    { from: 17, to: 431 }, { from: 17, to: 432 }, { from: 17, to: 433 }, { from: 17, to: 434 }, { from: 17, to: 435 },
-    { from: 17, to: 436 }, { from: 17, to: 437 }, { from: 17, to: 438 }, { from: 17, to: 439 }, { from: 17, to: 440 },
-    { from: 17, to: 441 }, { from: 17, to: 442 }, { from: 17, to: 443 }, { from: 17, to: 444 }, { from: 17, to: 445 },
+    { source: 17, target: 421 }, { source: 17, target: 422 }, { source: 17, target: 423 }, { source: 17, target: 424 }, { source: 17, target: 425 },
+    { source: 17, target: 426 }, { source: 17, target: 427 }, { source: 17, target: 428 }, { source: 17, target: 429 }, { source: 17, target: 430 },
+    { source: 17, target: 431 }, { source: 17, target: 432 }, { source: 17, target: 433 }, { source: 17, target: 434 }, { source: 17, target: 435 },
+    { source: 17, target: 436 }, { source: 17, target: 437 }, { source: 17, target: 438 }, { source: 17, target: 439 }, { source: 17, target: 440 },
+    { source: 17, target: 441 }, { source: 17, target: 442 }, { source: 17, target: 443 }, { source: 17, target: 444 }, { source: 17, target: 445 },
 
-    { from: 18, to: 446 }, { from: 18, to: 447 }, { from: 18, to: 448 }, { from: 18, to: 449 }, { from: 18, to: 450 },
-    { from: 18, to: 451 }, { from: 18, to: 452 }, { from: 18, to: 453 }, { from: 18, to: 454 }, { from: 18, to: 455 },
-    { from: 18, to: 456 }, { from: 18, to: 457 }, { from: 18, to: 458 }, { from: 18, to: 459 }, { from: 18, to: 460 },
-    { from: 18, to: 461 }, { from: 18, to: 462 }, { from: 18, to: 463 }, { from: 18, to: 464 }, { from: 18, to: 465 },
-    { from: 18, to: 466 }, { from: 18, to: 467 }, { from: 18, to: 468 }, { from: 18, to: 469 }, { from: 18, to: 470 },
+    { source: 18, target: 446 }, { source: 18, target: 447 }, { source: 18, target: 448 }, { source: 18, target: 449 }, { source: 18, target: 450 },
+    { source: 18, target: 451 }, { source: 18, target: 452 }, { source: 18, target: 453 }, { source: 18, target: 454 }, { source: 18, target: 455 },
+    { source: 18, target: 456 }, { source: 18, target: 457 }, { source: 18, target: 458 }, { source: 18, target: 459 }, { source: 18, target: 460 },
+    { source: 18, target: 461 }, { source: 18, target: 462 }, { source: 18, target: 463 }, { source: 18, target: 464 }, { source: 18, target: 465 },
+    { source: 18, target: 466 }, { source: 18, target: 467 }, { source: 18, target: 468 }, { source: 18, target: 469 }, { source: 18, target: 470 },
 
-    { from: 19, to: 471 }, { from: 19, to: 472 }, { from: 19, to: 473 }, { from: 19, to: 474 }, { from: 19, to: 475 },
-    { from: 19, to: 476 }, { from: 19, to: 477 }, { from: 19, to: 478 }, { from: 19, to: 479 }, { from: 19, to: 480 },
-    { from: 19, to: 481 }, { from: 19, to: 482 }, { from: 19, to: 483 }, { from: 19, to: 484 }, { from: 19, to: 485 },
-    { from: 19, to: 486 }, { from: 19, to: 487 }, { from: 19, to: 488 }, { from: 19, to: 489 }, { from: 19, to: 490 },
-    { from: 19, to: 491 }, { from: 19, to: 492 }, { from: 19, to: 493 }, { from: 19, to: 494 }, { from: 19, to: 495 },
+    { source: 19, target: 471 }, { source: 19, target: 472 }, { source: 19, target: 473 }, { source: 19, target: 474 }, { source: 19, target: 475 },
+    { source: 19, target: 476 }, { source: 19, target: 477 }, { source: 19, target: 478 }, { source: 19, target: 479 }, { source: 19, target: 480 },
+    { source: 19, target: 481 }, { source: 19, target: 482 }, { source: 19, target: 483 }, { source: 19, target: 484 }, { source: 19, target: 485 },
+    { source: 19, target: 486 }, { source: 19, target: 487 }, { source: 19, target: 488 }, { source: 19, target: 489 }, { source: 19, target: 490 },
+    { source: 19, target: 491 }, { source: 19, target: 492 }, { source: 19, target: 493 }, { source: 19, target: 494 }, { source: 19, target: 495 },
 
-    { from: 20, to: 496 }, { from: 20, to: 497 }, { from: 20, to: 498 }, { from: 20, to: 499 }, { from: 20, to: 500 },
-    { from: 20, to: 501 }, { from: 20, to: 502 }, { from: 20, to: 503 }, { from: 20, to: 504 }, { from: 20, to: 505 },
-    { from: 20, to: 506 }, { from: 20, to: 507 }, { from: 20, to: 508 }, { from: 20, to: 509 }, { from: 20, to: 510 },
-    { from: 20, to: 511 }, { from: 20, to: 512 }, { from: 20, to: 513 }, { from: 20, to: 514 }, { from: 20, to: 515 },
-    { from: 20, to: 516 }, { from: 20, to: 517 }, { from: 20, to: 518 }, { from: 20, to: 519 }, { from: 20, to: 520 },
+    { source: 20, target: 496 }, { source: 20, target: 497 }, { source: 20, target: 498 }, { source: 20, target: 499 }, { source: 20, target: 500 },
+    { source: 20, target: 501 }, { source: 20, target: 502 }, { source: 20, target: 503 }, { source: 20, target: 504 }, { source: 20, target: 505 },
+    { source: 20, target: 506 }, { source: 20, target: 507 }, { source: 20, target: 508 }, { source: 20, target: 509 }, { source: 20, target: 510 },
+    { source: 20, target: 511 }, { source: 20, target: 512 }, { source: 20, target: 513 }, { source: 20, target: 514 }, { source: 20, target: 515 },
+    { source: 20, target: 516 }, { source: 20, target: 517 }, { source: 20, target: 518 }, { source: 20, target: 519 }, { source: 20, target: 520 },
 
     // Intra-Category Connections (linear relationships for sub-topics)
     // Algorithms
-    { from: 21, to: 22 }, { from: 22, to: 23 }, { from: 23, to: 24 }, { from: 24, to: 25 }, { from: 25, to: 26 },
-    { from: 26, to: 27 }, { from: 27, to: 28 }, { from: 28, to: 29 }, { from: 29, to: 30 }, { from: 30, to: 31 },
-    { from: 31, to: 32 }, { from: 32, to: 33 }, { from: 33, to: 34 }, { from: 34, to: 35 }, { from: 35, to: 36 },
-    { from: 36, to: 37 }, { from: 37, to: 38 }, { from: 38, to: 39 }, { from: 39, to: 40 }, { from: 40, to: 41 },
-    { from: 41, to: 42 }, { from: 42, to: 43 }, { from: 43, to: 44 }, { from: 44, to: 45 },
+    { source: 21, target: 22 }, { source: 22, target: 23 }, { source: 23, target: 24 }, { source: 24, target: 25 }, { source: 25, target: 26 },
+    { source: 26, target: 27 }, { source: 27, target: 28 }, { source: 28, target: 29 }, { source: 29, target: 30 }, { source: 30, target: 31 },
+    { source: 31, target: 32 }, { source: 32, target: 33 }, { source: 33, target: 34 }, { source: 34, target: 35 }, { source: 35, target: 36 },
+    { source: 36, target: 37 }, { source: 37, target: 38 }, { source: 38, target: 39 }, { source: 39, target: 40 }, { source: 40, target: 41 },
+    { source: 41, target: 42 }, { source: 42, target: 43 }, { source: 43, target: 44 }, { source: 44, target: 45 },
 
     // DataStructures
-    { from: 46, to: 47 }, { from: 47, to: 48 }, { from: 48, to: 49 }, { from: 49, to: 50 }, { from: 50, to: 51 },
-    { from: 51, to: 52 }, { from: 52, to: 53 }, { from: 53, to: 54 }, { from: 54, to: 55 }, { from: 55, to: 56 },
-    { from: 56, to: 57 }, { from: 57, to: 58 }, { from: 58, to: 59 }, { from: 59, to: 60 }, { from: 60, to: 61 },
-    { from: 61, to: 62 }, { from: 62, to: 63 }, { from: 63, to: 64 }, { from: 64, to: 65 }, { from: 65, to: 66 },
-    { from: 66, to: 67 }, { from: 67, to: 68 }, { from: 68, to: 69 }, { from: 69, to: 70 },
+    { source: 46, target: 47 }, { source: 47, target: 48 }, { source: 48, target: 49 }, { source: 49, target: 50 }, { source: 50, target: 51 },
+    { source: 51, target: 52 }, { source: 52, target: 53 }, { source: 53, target: 54 }, { source: 54, target: 55 }, { source: 55, target: 56 },
+    { source: 56, target: 57 }, { source: 57, target: 58 }, { source: 58, target: 59 }, { source: 59, target: 60 }, { source: 60, target: 61 },
+    { source: 61, target: 62 }, { source: 62, target: 63 }, { source: 63, target: 64 }, { source: 64, target: 65 }, { source: 65, target: 66 },
+    { source: 66, target: 67 }, { source: 67, target: 68 }, { source: 68, target: 69 }, { source: 69, target: 70 },
 
     // ProgrammingLanguages
-    { from: 71, to: 72 }, { from: 72, to: 73 }, { from: 73, to: 74 }, { from: 74, to: 75 }, { from: 75, to: 76 },
-    { from: 76, to: 77 }, { from: 77, to: 78 }, { from: 78, to: 79 }, { from: 79, to: 80 }, { from: 80, to: 81 },
-    { from: 81, to: 82 }, { from: 82, to: 83 }, { from: 83, to: 84 }, { from: 84, to: 85 }, { from: 85, to: 86 },
-    { from: 86, to: 87 }, { from: 87, to: 88 }, { from: 88, to: 89 }, { from: 89, to: 90 }, { from: 90, to: 91 },
-    { from: 91, to: 92 }, { from: 92, to: 93 }, { from: 93, to: 94 }, { from: 94, to: 95 },
+    { source: 71, target: 72 }, { source: 72, target: 73 }, { source: 73, target: 74 }, { source: 74, target: 75 }, { source: 75, target: 76 },
+    { source: 76, target: 77 }, { source: 77, target: 78 }, { source: 78, target: 79 }, { source: 79, target: 80 }, { source: 80, target: 81 },
+    { source: 81, target: 82 }, { source: 82, target: 83 }, { source: 83, target: 84 }, { source: 84, target: 85 }, { source: 85, target: 86 },
+    { source: 86, target: 87 }, { source: 87, target: 88 }, { source: 88, target: 89 }, { source: 89, target: 90 }, { source: 90, target: 91 },
+    { source: 91, target: 92 }, { source: 92, target: 93 }, { source: 93, target: 94 }, { source: 94, target: 95 },
 
     // ArtificialIntelligence
-    { from: 96, to: 97 }, { from: 97, to: 98 }, { from: 98, to: 99 }, { from: 99, to: 100 }, { from: 100, to: 101 },
-    { from: 101, to: 102 }, { from: 102, to: 103 }, { from: 103, to: 104 }, { from: 104, to: 105 }, { from: 105, to: 106 },
-    { from: 106, to: 107 }, { from: 107, to: 108 }, { from: 108, to: 109 }, { from: 109, to: 110 }, { from: 110, to: 111 },
-    { from: 111, to: 112 }, { from: 112, to: 113 }, { from: 113, to: 114 }, { from: 114, to: 115 }, { from: 115, to: 116 },
-    { from: 116, to: 117 }, { from: 117, to: 118 }, { from: 118, to: 119 }, { from: 119, to: 120 },
+    { source: 96, target: 97 }, { source: 97, target: 98 }, { source: 98, target: 99 }, { source: 99, target: 100 }, { source: 100, target: 101 },
+    { source: 101, target: 102 }, { source: 102, target: 103 }, { source: 103, target: 104 }, { source: 104, target: 105 }, { source: 105, target: 106 },
+    { source: 106, target: 107 }, { source: 107, target: 108 }, { source: 108, target: 109 }, { source: 109, target: 110 }, { source: 110, target: 111 },
+    { source: 111, target: 112 }, { source: 112, target: 113 }, { source: 113, target: 114 }, { source: 114, target: 115 }, { source: 115, target: 116 },
+    { source: 116, target: 117 }, { source: 117, target: 118 }, { source: 118, target: 119 }, { source: 119, target: 120 },
 
     // MachineLearning
-    { from: 121, to: 122 }, { from: 122, to: 123 }, { from: 123, to: 124 }, { from: 124, to: 125 }, { from: 125, to: 126 },
-    { from: 126, to: 127 }, { from: 127, to: 128 }, { from: 128, to: 129 }, { from: 129, to: 130 }, { from: 130, to: 131 },
-    { from: 131, to: 132 }, { from: 132, to: 133 }, { from: 133, to: 134 }, { from: 134, to: 135 }, { from: 135, to: 136 },
-    { from: 136, to: 137 }, { from: 137, to: 138 }, { from: 138, to: 139 }, { from: 139, to: 140 }, { from: 140, to: 141 },
-    { from: 141, to: 142 }, { from: 142, to: 143 }, { from: 143, to: 144 }, { from: 144, to: 145 },
+    { source: 121, target: 122 }, { source: 122, target: 123 }, { source: 123, target: 124 }, { source: 124, target: 125 }, { source: 125, target: 126 },
+    { source: 126, target: 127 }, { source: 127, target: 128 }, { source: 128, target: 129 }, { source: 129, target: 130 }, { source: 130, target: 131 },
+    { source: 131, target: 132 }, { source: 132, target: 133 }, { source: 133, target: 134 }, { source: 134, target: 135 }, { source: 135, target: 136 },
+    { source: 136, target: 137 }, { source: 137, target: 138 }, { source: 138, target: 139 }, { source: 139, target: 140 }, { source: 140, target: 141 },
+    { source: 141, target: 142 }, { source: 142, target: 143 }, { source: 143, target: 144 }, { source: 144, target: 145 },
 
     // Databases
-    { from: 146, to: 147 }, { from: 147, to: 148 }, { from: 148, to: 149 }, { from: 149, to: 150 }, { from: 150, to: 151 },
-    { from: 151, to: 152 }, { from: 152, to: 153 }, { from: 153, to: 154 }, { from: 154, to: 155 }, { from: 155, to: 156 },
-    { from: 156, to: 157 }, { from: 157, to: 158 }, { from: 158, to: 159 }, { from: 159, to: 160 }, { from: 160, to: 161 },
-    { from: 161, to: 162 }, { from: 162, to: 163 }, { from: 163, to: 164 }, { from: 164, to: 165 }, { from: 165, to: 166 },
-    { from: 166, to: 167 }, { from: 167, to: 168 }, { from: 168, to: 169 }, { from: 169, to: 170 },
+    { source: 146, target: 147 }, { source: 147, target: 148 }, { source: 148, target: 149 }, { source: 149, target: 150 }, { source: 150, target: 151 },
+    { source: 151, target: 152 }, { source: 152, target: 153 }, { source: 153, target: 154 }, { source: 154, target: 155 }, { source: 155, target: 156 },
+    { source: 156, target: 157 }, { source: 157, target: 158 }, { source: 158, target: 159 }, { source: 159, target: 160 }, { source: 160, target: 161 },
+    { source: 161, target: 162 }, { source: 162, target: 163 }, { source: 163, target: 164 }, { source: 164, target: 165 }, { source: 165, target: 166 },
+    { source: 166, target: 167 }, { source: 167, target: 168 }, { source: 168, target: 169 }, { source: 169, target: 170 },
 
     // Networking
-    { from: 171, to: 172 }, { from: 172, to: 173 }, { from: 173, to: 174 }, { from: 174, to: 175 }, { from: 175, to: 176 },
-    { from: 176, to: 177 }, { from: 177, to: 178 }, { from: 178, to: 179 }, { from: 179, to: 180 }, { from: 180, to: 181 },
-    { from: 181, to: 182 }, { from: 182, to: 183 }, { from: 183, to: 184 }, { from: 184, to: 185 }, { from: 185, to: 186 },
-    { from: 186, to: 187 }, { from: 187, to: 188 }, { from: 188, to: 189 }, { from: 189, to: 190 }, { from: 190, to: 191 },
-    { from: 191, to: 192 }, { from: 192, to: 193 }, { from: 193, to: 194 }, { from: 194, to: 195 },
+    { source: 171, target: 172 }, { source: 172, target: 173 }, { source: 173, target: 174 }, { source: 174, target: 175 }, { source: 175, target: 176 },
+    { source: 176, target: 177 }, { source: 177, target: 178 }, { source: 178, target: 179 }, { source: 179, target: 180 }, { source: 180, target: 181 },
+    { source: 181, target: 182 }, { source: 182, target: 183 }, { source: 183, target: 184 }, { source: 184, target: 185 }, { source: 185, target: 186 },
+    { source: 186, target: 187 }, { source: 187, target: 188 }, { source: 188, target: 189 }, { source: 189, target: 190 }, { source: 190, target: 191 },
+    { source: 191, target: 192 }, { source: 192, target: 193 }, { source: 193, target: 194 }, { source: 194, target: 195 },
 
     // OperatingSystems
-    { from: 196, to: 197 }, { from: 197, to: 198 }, { from: 198, to: 199 }, { from: 199, to: 200 }, { from: 200, to: 201 },
-    { from: 201, to: 202 }, { from: 202, to: 203 }, { from: 203, to: 204 }, { from: 204, to: 205 }, { from: 205, to: 206 },
-    { from: 206, to: 207 }, { from: 207, to: 208 }, { from: 208, to: 209 }, { from: 209, to: 210 }, { from: 210, to: 211 },
-    { from: 211, to: 212 }, { from: 212, to: 213 }, { from: 213, to: 214 }, { from: 214, to: 215 }, { from: 215, to: 216 },
-    { from: 216, to: 217 }, { from: 217, to: 218 }, { from: 218, to: 219 }, { from: 219, to: 220 },
+    { source: 196, target: 197 }, { source: 197, target: 198 }, { source: 198, target: 199 }, { source: 199, target: 200 }, { source: 200, target: 201 },
+    { source: 201, target: 202 }, { source: 202, target: 203 }, { source: 203, target: 204 }, { source: 204, target: 205 }, { source: 205, target: 206 },
+    { source: 206, target: 207 }, { source: 207, target: 208 }, { source: 208, target: 209 }, { source: 209, target: 210 }, { source: 210, target: 211 },
+    { source: 211, target: 212 }, { source: 212, target: 213 }, { source: 213, target: 214 }, { source: 214, target: 215 }, { source: 215, target: 216 },
+    { source: 216, target: 217 }, { source: 217, target: 218 }, { source: 218, target: 219 }, { source: 219, target: 220 },
 
     // SoftwareEngineering
-    { from: 221, to: 222 }, { from: 222, to: 223 }, { from: 223, to: 224 }, { from: 224, to: 225 }, { from: 225, to: 226 },
-    { from: 226, to: 227 }, { from: 227, to: 228 }, { from: 228, to: 229 }, { from: 229, to: 230 }, { from: 230, to: 231 },
-    { from: 231, to: 232 }, { from: 232, to: 233 }, { from: 233, to: 234 }, { from: 234, to: 235 }, { from: 235, to: 236 },
-    { from: 236, to: 237 }, { from: 237, to: 238 }, { from: 238, to: 239 }, { from: 239, to: 240 }, { from: 240, to: 241 },
-    { from: 241, to: 242 }, { from: 242, to: 243 }, { from: 243, to: 244 }, { from: 244, to: 245 },
+    { source: 221, target: 222 }, { source: 222, target: 223 }, { source: 223, target: 224 }, { source: 224, target: 225 }, { source: 225, target: 226 },
+    { source: 226, target: 227 }, { source: 227, target: 228 }, { source: 228, target: 229 }, { source: 229, target: 230 }, { source: 230, target: 231 },
+    { source: 231, target: 232 }, { source: 232, target: 233 }, { source: 233, target: 234 }, { source: 234, target: 235 }, { source: 235, target: 236 },
+    { source: 236, target: 237 }, { source: 237, target: 238 }, { source: 238, target: 239 }, { source: 239, target: 240 }, { source: 240, target: 241 },
+    { source: 241, target: 242 }, { source: 242, target: 243 }, { source: 243, target: 244 }, { source: 244, target: 245 },
 
     // Cybersecurity
-    { from: 246, to: 247 }, { from: 247, to: 248 }, { from: 248, to: 249 }, { from: 249, to: 250 }, { from: 250, to: 251 },
-    { from: 251, to: 252 }, { from: 252, to: 253 }, { from: 253, to: 254 }, { from: 254, to: 255 }, { from: 255, to: 256 },
-    { from: 256, to: 257 }, { from: 257, to: 258 }, { from: 258, to: 259 }, { from: 259, to: 260 }, { from: 260, to: 261 },
-    { from: 261, to: 262 }, { from: 262, to: 263 }, { from: 263, to: 264 }, { from: 264, to: 265 }, { from: 265, to: 266 },
-    { from: 266, to: 267 }, { from: 267, to: 268 }, { from: 268, to: 269 }, { from: 269, to: 270 },
+    { source: 246, target: 247 }, { source: 247, target: 248 }, { source: 248, target: 249 }, { source: 249, target: 250 }, { source: 250, target: 251 },
+    { source: 251, target: 252 }, { source: 252, target: 253 }, { source: 253, target: 254 }, { source: 254, target: 255 }, { source: 255, target: 256 },
+    { source: 256, target: 257 }, { source: 257, target: 258 }, { source: 258, target: 259 }, { source: 259, target: 260 }, { source: 260, target: 261 },
+    { source: 261, target: 262 }, { source: 262, target: 263 }, { source: 263, target: 264 }, { source: 264, target: 265 }, { source: 265, target: 266 },
+    { source: 266, target: 267 }, { source: 267, target: 268 }, { source: 268, target: 269 }, { source: 269, target: 270 },
 
     // ComputerVision
-    { from: 271, to: 272 }, { from: 272, to: 273 }, { from: 273, to: 274 }, { from: 274, to: 275 }, { from: 275, to: 276 },
-    { from: 276, to: 277 }, { from: 277, to: 278 }, { from: 278, to: 279 }, { from: 279, to: 280 }, { from: 280, to: 281 },
-    { from: 281, to: 282 }, { from: 282, to: 283 }, { from: 283, to: 284 }, { from: 284, to: 285 }, { from: 285, to: 286 },
-    { from: 286, to: 287 }, { from: 287, to: 288 }, { from: 288, to: 289 }, { from: 289, to: 290 }, { from: 290, to: 291 },
-    { from: 291, to: 292 }, { from: 292, to: 293 }, { from: 293, to: 294 }, { from: 294, to: 295 },
+    { source: 271, target: 272 }, { source: 272, target: 273 }, { source: 273, target: 274 }, { source: 274, target: 275 }, { source: 275, target: 276 },
+    { source: 276, target: 277 }, { source: 277, target: 278 }, { source: 278, target: 279 }, { source: 279, target: 280 }, { source: 280, target: 281 },
+    { source: 281, target: 282 }, { source: 282, target: 283 }, { source: 283, target: 284 }, { source: 284, target: 285 }, { source: 285, target: 286 },
+    { source: 286, target: 287 }, { source: 287, target: 288 }, { source: 288, target: 289 }, { source: 289, target: 290 }, { source: 290, target: 291 },
+    { source: 291, target: 292 }, { source: 292, target: 293 }, { source: 293, target: 294 }, { source: 294, target: 295 },
 
     // NLP
-    { from: 296, to: 297 }, { from: 297, to: 298 }, { from: 298, to: 299 }, { from: 299, to: 300 }, { from: 300, to: 301 },
-    { from: 301, to: 302 }, { from: 302, to: 303 }, { from: 303, to: 304 }, { from: 304, to: 305 }, { from: 305, to: 306 },
-    { from: 306, to: 307 }, { from: 307, to: 308 }, { from: 308, to: 309 }, { from: 309, to: 310 }, { from: 310, to: 311 },
-    { from: 311, to: 312 }, { from: 312, to: 313 }, { from: 313, to: 314 }, { from: 314, to: 315 }, { from: 315, to: 316 },
-    { from: 316, to: 317 }, { from: 317, to: 318 }, { from: 318, to: 319 }, { from: 319, to: 320 },
+    { source: 296, target: 297 }, { source: 297, target: 298 }, { source: 298, target: 299 }, { source: 299, target: 300 }, { source: 300, target: 301 },
+    { source: 301, target: 302 }, { source: 302, target: 303 }, { source: 303, target: 304 }, { source: 304, target: 305 }, { source: 305, target: 306 },
+    { source: 306, target: 307 }, { source: 307, target: 308 }, { source: 308, target: 309 }, { source: 309, target: 310 }, { source: 310, target: 311 },
+    { source: 311, target: 312 }, { source: 312, target: 313 }, { source: 313, target: 314 }, { source: 314, target: 315 }, { source: 315, target: 316 },
+    { source: 316, target: 317 }, { source: 317, target: 318 }, { source: 318, target: 319 }, { source: 319, target: 320 },
 
     // DistributedSystems
-    { from: 321, to: 322 }, { from: 322, to: 323 }, { from: 323, to: 324 }, { from: 324, to: 325 }, { from: 325, to: 326 },
-    { from: 326, to: 327 }, { from: 327, to: 328 }, { from: 328, to: 329 }, { from: 329, to: 330 }, { from: 330, to: 331 },
-    { from: 331, to: 332 }, { from: 332, to: 333 }, { from: 333, to: 334 }, { from: 334, to: 335 }, { from: 335, to: 336 },
-    { from: 336, to: 337 }, { from: 337, to: 338 }, { from: 338, to: 339 }, { from: 339, to: 340 }, { from: 340, to: 341 },
-    { from: 341, to: 342 }, { from: 342, to: 343 }, { from: 343, to: 344 }, { from: 344, to: 345 },
+    { source: 321, target: 322 }, { source: 322, target: 323 }, { source: 323, target: 324 }, { source: 324, target: 325 }, { source: 325, target: 326 },
+    { source: 326, target: 327 }, { source: 327, target: 328 }, { source: 328, target: 329 }, { source: 329, target: 330 }, { source: 330, target: 331 },
+    { source: 331, target: 332 }, { source: 332, target: 333 }, { source: 333, target: 334 }, { source: 334, target: 335 }, { source: 335, target: 336 },
+    { source: 336, target: 337 }, { source: 337, target: 338 }, { source: 338, target: 339 }, { source: 339, target: 340 }, { source: 340, target: 341 },
+    { source: 341, target: 342 }, { source: 342, target: 343 }, { source: 343, target: 344 }, { source: 344, target: 345 },
 
     // CloudComputing
-    { from: 346, to: 347 }, { from: 347, to: 348 }, { from: 348, to: 349 }, { from: 349, to: 350 }, { from: 350, to: 351 },
-    { from: 351, to: 352 }, { from: 352, to: 353 }, { from: 353, to: 354 }, { from: 354, to: 355 }, { from: 355, to: 356 },
-    { from: 356, to: 357 }, { from: 357, to: 358 }, { from: 358, to: 359 }, { from: 359, to: 360 }, { from: 360, to: 361 },
-    { from: 361, to: 362 }, { from: 362, to: 363 }, { from: 363, to: 364 }, { from: 364, to: 365 }, { from: 365, to: 366 },
-    { from: 366, to: 367 }, { from: 367, to: 368 }, { from: 368, to: 369 }, { from: 369, to: 370 },
+    { source: 346, target: 347 }, { source: 347, target: 348 }, { source: 348, target: 349 }, { source: 349, target: 350 }, { source: 350, target: 351 },
+    { source: 351, target: 352 }, { source: 352, target: 353 }, { source: 353, target: 354 }, { source: 354, target: 355 }, { source: 355, target: 356 },
+    { source: 356, target: 357 }, { source: 357, target: 358 }, { source: 358, target: 359 }, { source: 359, target: 360 }, { source: 360, target: 361 },
+    { source: 361, target: 362 }, { source: 362, target: 363 }, { source: 363, target: 364 }, { source: 364, target: 365 }, { source: 365, target: 366 },
+    { source: 366, target: 367 }, { source: 367, target: 368 }, { source: 368, target: 369 }, { source: 369, target: 370 },
 
     // WebDevelopment
-    { from: 371, to: 372 }, { from: 372, to: 373 }, { from: 373, to: 374 }, { from: 374, to: 375 }, { from: 375, to: 376 },
-    { from: 376, to: 377 }, { from: 377, to: 378 }, { from: 378, to: 379 }, { from: 379, to: 380 }, { from: 380, to: 381 },
-    { from: 381, to: 382 }, { from: 382, to: 383 }, { from: 383, to: 384 }, { from: 384, to: 385 }, { from: 385, to: 386 },
-    { from: 386, to: 387 }, { from: 387, to: 388 }, { from: 388, to: 389 }, { from: 389, to: 390 }, { from: 390, to: 391 },
-    { from: 391, to: 392 }, { from: 392, to: 393 }, { from: 393, to: 394 }, { from: 394, to: 395 },
+    { source: 371, target: 372 }, { source: 372, target: 373 }, { source: 373, target: 374 }, { source: 374, target: 375 }, { source: 375, target: 376 },
+    { source: 376, target: 377 }, { source: 377, target: 378 }, { source: 378, target: 379 }, { source: 379, target: 380 }, { source: 380, target: 381 },
+    { source: 381, target: 382 }, { source: 382, target: 383 }, { source: 383, target: 384 }, { source: 384, target: 385 }, { source: 385, target: 386 },
+    { source: 386, target: 387 }, { source: 387, target: 388 }, { source: 388, target: 389 }, { source: 389, target: 390 }, { source: 390, target: 391 },
+    { source: 391, target: 392 }, { source: 392, target: 393 }, { source: 393, target: 394 }, { source: 394, target: 395 },
 
     // MobileDevelopment
-    { from: 396, to: 397 }, { from: 397, to: 398 }, { from: 398, to: 399 }, { from: 399, to: 400 }, { from: 400, to: 401 },
-    { from: 401, to: 402 }, { from: 402, to: 403 }, { from: 403, to: 404 }, { from: 404, to: 405 }, { from: 405, to: 406 },
-    { from: 406, to: 407 }, { from: 407, to: 408 }, { from: 408, to: 409 }, { from: 409, to: 410 }, { from: 410, to: 411 },
-    { from: 411, to: 412 }, { from: 412, to: 413 }, { from: 413, to: 414 }, { from: 414, to: 415 }, { from: 415, to: 416 },
-    { from: 416, to: 417 }, { from: 417, to: 418 }, { from: 418, to: 419 }, { from: 419, to: 420 },
+    { source: 396, target: 397 }, { source: 397, target: 398 }, { source: 398, target: 399 }, { source: 399, target: 400 }, { source: 400, target: 401 },
+    { source: 401, target: 402 }, { source: 402, target: 403 }, { source: 403, target: 404 }, { source: 404, target: 405 }, { source: 405, target: 406 },
+    { source: 406, target: 407 }, { source: 407, target: 408 }, { source: 408, target: 409 }, { source: 409, target: 410 }, { source: 410, target: 411 },
+    { source: 411, target: 412 }, { source: 412, target: 413 }, { source: 413, target: 414 }, { source: 414, target: 415 }, { source: 415, target: 416 },
+    { source: 416, target: 417 }, { source: 417, target: 418 }, { source: 418, target: 419 }, { source: 419, target: 420 },
 
     // DataScience
-    { from: 421, to: 422 }, { from: 422, to: 423 }, { from: 423, to: 424 }, { from: 424, to: 425 }, { from: 425, to: 426 },
-    { from: 426, to: 427 }, { from: 427, to: 428 }, { from: 428, to: 429 }, { from: 429, to: 430 }, { from: 430, to: 431 },
-    { from: 431, to: 432 }, { from: 432, to: 433 }, { from: 433, to: 434 }, { from: 434, to: 435 }, { from: 435, to: 436 },
-    { from: 436, to: 437 }, { from: 437, to: 438 }, { from: 438, to: 439 }, { from: 439, to: 440 }, { from: 440, to: 441 },
-    { from: 441, to: 442 }, { from: 442, to: 443 }, { from: 443, to: 444 }, { from: 444, to: 445 },
+    { source: 421, target: 422 }, { source: 422, target: 423 }, { source: 423, target: 424 }, { source: 424, target: 425 }, { source: 425, target: 426 },
+    { source: 426, target: 427 }, { source: 427, target: 428 }, { source: 428, target: 429 }, { source: 429, target: 430 }, { source: 430, target: 431 },
+    { source: 431, target: 432 }, { source: 432, target: 433 }, { source: 433, target: 434 }, { source: 434, target: 435 }, { source: 435, target: 436 },
+    { source: 436, target: 437 }, { source: 437, target: 438 }, { source: 438, target: 439 }, { source: 439, target: 440 }, { source: 440, target: 441 },
+    { source: 441, target: 442 }, { source: 442, target: 443 }, { source: 443, target: 444 }, { source: 444, target: 445 },
 
     // BigData
-    { from: 446, to: 447 }, { from: 447, to: 448 }, { from: 448, to: 449 }, { from: 449, to: 450 }, { from: 450, to: 451 },
-    { from: 451, to: 452 }, { from: 452, to: 453 }, { from: 453, to: 454 }, { from: 454, to: 455 }, { from: 455, to: 456 },
-    { from: 456, to: 457 }, { from: 457, to: 458 }, { from: 458, to: 459 }, { from: 459, to: 460 }, { from: 460, to: 461 },
-    { from: 461, to: 462 }, { from: 462, to: 463 }, { from: 463, to: 464 }, { from: 464, to: 465 }, { from: 465, to: 466 },
-    { from: 466, to: 467 }, { from: 467, to: 468 }, { from: 468, to: 469 }, { from: 469, to: 470 },
+    { source: 446, target: 447 }, { source: 447, target: 448 }, { source: 448, target: 449 }, { source: 449, target: 450 }, { source: 450, target: 451 },
+    { source: 451, target: 452 }, { source: 452, target: 453 }, { source: 453, target: 454 }, { source: 454, target: 455 }, { source: 455, target: 456 },
+    { source: 456, target: 457 }, { source: 457, target: 458 }, { source: 458, target: 459 }, { source: 459, target: 460 }, { source: 460, target: 461 },
+    { source: 461, target: 462 }, { source: 462, target: 463 }, { source: 463, target: 464 }, { source: 464, target: 465 }, { source: 465, target: 466 },
+    { source: 466, target: 467 }, { source: 467, target: 468 }, { source: 468, target: 469 }, { source: 469, target: 470 },
 
     // TheoryOfComputation
-    { from: 471, to: 472 }, { from: 472, to: 473 }, { from: 473, to: 474 }, { from: 474, to: 475 }, { from: 475, to: 476 },
-    { from: 476, to: 477 }, { from: 477, to: 478 }, { from: 478, to: 479 }, { from: 479, to: 480 }, { from: 480, to: 481 },
-    { from: 481, to: 482 }, { from: 482, to: 483 }, { from: 483, to: 484 }, { from: 484, to: 485 }, { from: 485, to: 486 },
-    { from: 486, to: 487 }, { from: 487, to: 488 }, { from: 488, to: 489 }, { from: 489, to: 490 }, { from: 490, to: 491 },
-    { from: 491, to: 492 }, { from: 492, to: 493 }, { from: 493, to: 494 }, { from: 494, to: 495 },
+    { source: 471, target: 472 }, { source: 472, target: 473 }, { source: 473, target: 474 }, { source: 474, target: 475 }, { source: 475, target: 476 },
+    { source: 476, target: 477 }, { source: 477, target: 478 }, { source: 478, target: 479 }, { source: 479, target: 480 }, { source: 480, target: 481 },
+    { source: 481, target: 482 }, { source: 482, target: 483 }, { source: 483, target: 484 }, { source: 484, target: 485 }, { source: 485, target: 486 },
+    { source: 486, target: 487 }, { source: 487, target: 488 }, { source: 488, target: 489 }, { source: 489, target: 490 }, { source: 490, target: 491 },
+    { source: 491, target: 492 }, { source: 492, target: 493 }, { source: 493, target: 494 }, { source: 494, target: 495 },
 
     // ComputerArchitecture
-    { from: 496, to: 497 }, { from: 497, to: 498 }, { from: 498, to: 499 }, { from: 499, to: 500 }, { from: 500, to: 501 },
-    { from: 501, to: 502 }, { from: 502, to: 503 }, { from: 503, to: 504 }, { from: 504, to: 505 }, { from: 505, to: 506 },
-    { from: 506, to: 507 }, { from: 507, to: 508 }, { from: 508, to: 509 }, { from: 509, to: 510 }, { from: 510, to: 511 },
-    { from: 511, to: 512 }, { from: 512, to: 513 }, { from: 513, to: 514 }, { from: 514, to: 515 }, { from: 515, to: 516 },
-    { from: 516, to: 517 }, { from: 517, to: 518 }, { from: 518, to: 519 }, { from: 519, to: 520 },
+    { source: 496, target: 497 }, { source: 497, target: 498 }, { source: 498, target: 499 }, { source: 499, target: 500 }, { source: 500, target: 501 },
+    { source: 501, target: 502 }, { source: 502, target: 503 }, { source: 503, target: 504 }, { source: 504, target: 505 }, { source: 505, target: 506 },
+    { source: 506, target: 507 }, { source: 507, target: 508 }, { source: 508, target: 509 }, { source: 509, target: 510 }, { source: 510, target: 511 },
+    { source: 511, target: 512 }, { source: 512, target: 513 }, { source: 513, target: 514 }, { source: 514, target: 515 }, { source: 515, target: 516 },
+    { source: 516, target: 517 }, { source: 517, target: 518 }, { source: 518, target: 519 }, { source: 519, target: 520 },
 
     // Inter-Category Connections (Related Major Topics)
-    { from: 4, to: 5 }, // AI to ML
-    { from: 5, to: 17 }, // ML to DataScience
-    { from: 17, to: 18 }, // DataScience to BigData
-    { from: 5, to: 11 }, // ML to ComputerVision
-    { from: 5, to: 12 }, // ML to NLP
-    { from: 1, to: 2 }, // Algorithms to DataStructures
-    { from: 1, to: 19 }, // Algorithms to TheoryOfComputation
-    { from: 3, to: 9 }, // ProgrammingLanguages to SoftwareEngineering
-    { from: 6, to: 18 }, // Databases to BigData
-    { from: 7, to: 10 }, // Networking to Cybersecurity
-    { from: 7, to: 14 }, // Networking to CloudComputing
-    { from: 8, to: 20 }, // OperatingSystems to ComputerArchitecture
-    { from: 8, to: 13 }, // OperatingSystems to DistributedSystems
-    { from: 13, to: 14 }, // DistributedSystems to CloudComputing
-    { from: 15, to: 16 }, // WebDevelopment to MobileDevelopment
-    { from: 521, to: 1 }, // Connects Computer Science to Algorithms
-    { from: 521, to: 2 }, // Connects Computer Science to DataStructures
-    { from: 521, to: 3 }, // Connects Computer Science to ProgrammingLanguages
-    { from: 521, to: 4 }, // Connects Computer Science to ArtificialIntelligence
-    { from: 521, to: 5 }, // Connects Computer Science to MachineLearning
-    { from: 521, to: 6 }, // Connects Computer Science to Databases
-    { from: 521, to: 7 }, // Connects Computer Science to Networking
-    { from: 521, to: 8 }, // Connects Computer Science to OperatingSystems
-    { from: 521, to: 9 }, // Connects Computer Science to SoftwareEngineering
-    { from: 521, to: 10 }, // Connects Computer Science to Cybersecurity
-    { from: 521, to: 11 }, // Connects Computer Science to ComputerVision
-    { from: 521, to: 12 }, // Connects Computer Science to NLP
-    { from: 521, to: 13 }, // Connects Computer Science to DistributedSystems
-    { from: 521, to: 14 }, // Connects Computer Science to CloudComputing
-    { from: 521, to: 15 }, // Connects Computer Science to WebDevelopment
-    { from: 521, to: 16 }, // Connects Computer Science to MobileDevelopment
-    { from: 521, to: 17 }, // Connects Computer Science to DataScience
-    { from: 521, to: 18 }, // Connects Computer Science to BigData
-    { from: 521, to: 19 }, // Connects Computer Science to TheoryOfComputation
-    { from: 521, to: 20 }, // Connects Computer Science to ComputerArchitecture
-    { from: 522, to: 536 }, // Connects Biology to Biology Sub-Topic 1
-    { from: 522, to: 537 }, // Connects Biology to Biology Sub-Topic 2
-    { from: 522, to: 538 }, // Connects Biology to Biology Sub-Topic 3
-    { from: 522, to: 539 }, // Connects Biology to Biology Sub-Topic 4
-    { from: 522, to: 540 }, // Connects Biology to Biology Sub-Topic 5
-    { from: 522, to: 541 }, // Connects Biology to Biology Sub-Topic 6
-    { from: 522, to: 542 }, // Connects Biology to Biology Sub-Topic 7
-    { from: 523, to: 543 }, // Connects Chemistry to Linear Algebra Sub-Topic 1
-    { from: 523, to: 544 }, // Connects Chemistry to Linear Algebra Sub-Topic 2
-    { from: 523, to: 545 }, // Connects Chemistry to Linear Algebra Sub-Topic 3
-    { from: 523, to: 546 }, // Connects Chemistry to Linear Algebra Sub-Topic 4
-    { from: 523, to: 547 }, // Connects Chemistry to Linear Algebra Sub-Topic 5
-    { from: 523, to: 548 }, // Connects Chemistry to Linear Algebra Sub-Topic 6
-    { from: 523, to: 549 }, // Connects Chemistry to Linear Algebra Sub-Topic 7
+    { source: 4, target: 5 }, // AI target ML
+    { source: 5, target: 17 }, // ML target DataScience
+    { source: 17, target: 18 }, // DataScience target BigData
+    { source: 5, target: 11 }, // ML target ComputerVision
+    { source: 5, target: 12 }, // ML target NLP
+    { source: 1, target: 2 }, // Algorithms target DataStructures
+    { source: 1, target: 19 }, // Algorithms target TheoryOfComputation
+    { source: 3, target: 9 }, // ProgrammingLanguages target SoftwareEngineering
+    { source: 6, target: 18 }, // Databases target BigData
+    { source: 7, target: 10 }, // Networking target Cybersecurity
+    { source: 7, target: 14 }, // Networking target CloudComputing
+    { source: 8, target: 20 }, // OperatingSystems target ComputerArchitecture
+    { source: 8, target: 13 }, // OperatingSystems target DistributedSystems
+    { source: 13, target: 14 }, // DistributedSystems target CloudComputing
+    { source: 15, target: 16 }, // WebDevelopment target MobileDevelopment
+    { source: 521, target: 1 }, // Connects Computer Science target Algorithms
+    { source: 521, target: 2 }, // Connects Computer Science target DataStructures
+    { source: 521, target: 3 }, // Connects Computer Science target ProgrammingLanguages
+    { source: 521, target: 4 }, // Connects Computer Science target ArtificialIntelligence
+    { source: 521, target: 5 }, // Connects Computer Science target MachineLearning
+    { source: 521, target: 6 }, // Connects Computer Science target Databases
+    { source: 521, target: 7 }, // Connects Computer Science target Networking
+    { source: 521, target: 8 }, // Connects Computer Science target OperatingSystems
+    { source: 521, target: 9 }, // Connects Computer Science target SoftwareEngineering
+    { source: 521, target: 10 }, // Connects Computer Science target Cybersecurity
+    { source: 521, target: 11 }, // Connects Computer Science target ComputerVision
+    { source: 521, target: 12 }, // Connects Computer Science target NLP
+    { source: 521, target: 13 }, // Connects Computer Science target DistributedSystems
+    { source: 521, target: 14 }, // Connects Computer Science target CloudComputing
+    { source: 521, target: 15 }, // Connects Computer Science target WebDevelopment
+    { source: 521, target: 16 }, // Connects Computer Science target MobileDevelopment
+    { source: 521, target: 17 }, // Connects Computer Science target DataScience
+    { source: 521, target: 18 }, // Connects Computer Science target BigData
+    { source: 521, target: 19 }, // Connects Computer Science target TheoryOfComputation
+    { source: 521, target: 20 }, // Connects Computer Science target ComputerArchitecture
+    { source: 522, target: 536 }, // Connects Biology target Biology Sub-Topic 1
+    { source: 522, target: 537 }, // Connects Biology target Biology Sub-Topic 2
+    { source: 522, target: 538 }, // Connects Biology target Biology Sub-Topic 3
+    { source: 522, target: 539 }, // Connects Biology target Biology Sub-Topic 4
+    { source: 522, target: 540 }, // Connects Biology target Biology Sub-Topic 5
+    { source: 522, target: 541 }, // Connects Biology target Biology Sub-Topic 6
+    { source: 522, target: 542 }, // Connects Biology target Biology Sub-Topic 7
+    { source: 523, target: 543 }, // Connects Chemistry target Linear Algebra Sub-Topic 1
+    { source: 523, target: 544 }, // Connects Chemistry target Linear Algebra Sub-Topic 2
+    { source: 523, target: 545 }, // Connects Chemistry target Linear Algebra Sub-Topic 3
+    { source: 523, target: 546 }, // Connects Chemistry target Linear Algebra Sub-Topic 4
+    { source: 523, target: 547 }, // Connects Chemistry target Linear Algebra Sub-Topic 5
+    { source: 523, target: 548 }, // Connects Chemistry target Linear Algebra Sub-Topic 6
+    { source: 523, target: 549 }, // Connects Chemistry target Linear Algebra Sub-Topic 7
   ]
 };
