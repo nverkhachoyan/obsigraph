@@ -1,0 +1,35 @@
+{
+  "name": "obsigraph",
+  "version": "0.0.1",
+  "description": "A library for creating Obsidian style graphs.",
+  "main": "dist/obsigraph.js",
+  "types": "dist/types/main.d.ts",
+  "scripts": {
+    "dev": "esbuild src/index.ts --bundle --outfile=dist/bundle.js --servedir=.",
+    "build:demo": "esbuild src/index.ts --bundle --outfile=dist/bundle.js --minify --drop:console",
+    "build": "npm run build:ts && esbuild src/main.ts --bundle --outfile=dist/obsigraph.js --format=esm --minify --drop:console",
+    "build:browser": "esbuild src/main.ts --bundle --outfile=dist/obsigraph.browser.js --format=iife --global-name=ObsiGraph --minify --drop:console",
+    "build:ts": "tsc --project tsconfig.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "obsidian",
+    "d3",
+    "graph",
+    "visualization"
+  ],
+  "author": "Nver Khachoyan",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/d3": "^7.4.3",
+    "@types/lodash": "^4.17.20",
+    "esbuild": "^0.21.5",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@tweenjs/tween.js": "^25.0.0",
+    "d3": "^7.9.0",
+    "lodash": "^4.17.21",
+    "pixi.js": "^8.11.0"
+  }
+}
