@@ -1,4 +1,13 @@
-import { forceSimulation, forceLink, forceManyBody, forceX, forceY, forceCollide, Simulation, ForceLink, ForceManyBody } from 'd3-force';
+import { 
+  forceSimulation, 
+  forceLink, 
+  forceManyBody, 
+  forceX, forceY, 
+  forceCollide, 
+  Simulation, 
+  ForceLink, 
+  ForceManyBody,
+} from 'd3-force';
 import * as PIXI from 'pixi.js';
 import { Tween, Group } from '@tweenjs/tween.js';
 import { GRAPH_DEFAULTS } from './config';
@@ -17,13 +26,13 @@ interface ObsiGraphType {
   width: number;
   height: number;
   theme: 'light' | 'dark';
-  zoomToFit(): void;
-  zoomIn(factor?: number): void;
-  zoomOut(factor?: number): void;
-  updateData(nodes: any[], edges: any[]): void;
-  removeOrphanNodes(): void;
-  setTheme(theme: 'light' | 'dark'): void;
-  resize(): void;
+  zoomToFit(): ObsiGraph;
+  zoomIn(factor?: number): ObsiGraph;
+  zoomOut(factor?: number): ObsiGraph;
+  updateData(nodes: any[], edges: any[]): ObsiGraph;
+  removeOrphanNodes(): ObsiGraph;
+  setTheme(theme: 'light' | 'dark'): ObsiGraph;
+  resize(): ObsiGraph;
   destroy(): void;
 }
 
@@ -248,12 +257,19 @@ export default class ObsiGraph implements ObsiGraphType {
   }
 
   private drawNode(graphics: PIXI.Graphics, node: Node, isHovered: boolean) {
+    const isThereHoveredNode = this.hoveredNode?.id !== undefined;
+    const isNeighbor = this.hoveredNode ? this.areNodesConnected(this.hoveredNode, node) : false;
     const strokeColor = isHovered 
-        ? this.options.colors[this.theme].nodeHighlight 
-        : this.options.colors[this.theme].nodeStroke;
+        ? this.options.colors[this.theme].nodeHighlightStroke 
+        : isThereHoveredNode && !isNeighbor 
+          ? this.options.colors[this.theme].nodeDimmedStroke 
+          : this.options.colors[this.theme].nodeStroke;
+
     const fillColor = isHovered
         ? this.options.colors[this.theme].nodeHighlight
-        : this.options.colors[this.theme].node;
+        : isThereHoveredNode && !isNeighbor
+          ? this.options.colors[this.theme].nodeDimmed
+          : this.options.colors[this.theme].node;
 
     graphics.clear();
     graphics.circle(0, 0, node.size)
@@ -402,6 +418,7 @@ export default class ObsiGraph implements ObsiGraphType {
             const isConnected = this.hoveredNode ? this.areNodesConnected(this.hoveredNode, n) : false;
             
             let finalAlpha = 1;
+             
             if (this.hoveredNode && !isHovered && !isConnected) {
                 finalAlpha = 0.2;
             }
@@ -417,6 +434,7 @@ export default class ObsiGraph implements ObsiGraphType {
                 this.hasChanged = true;
             }
 
+            needsRender = true;
             this.drawNode(g, n, isHovered);
         }
     });
@@ -568,9 +586,9 @@ export default class ObsiGraph implements ObsiGraphType {
     });
   }
 
-  public zoomToFit() {
+  public zoomToFit(): ObsiGraph {
     if (this.nodes.length === 0) {
-      return;
+      return this;
     }
 
     const PADDING = 1;
@@ -586,7 +604,7 @@ export default class ObsiGraph implements ObsiGraphType {
     const graphWidth = maxX - minX;
     const graphHeight = maxY - minY;
 
-    if (graphWidth === 0 || graphHeight === 0) return;
+    if (graphWidth === 0 || graphHeight === 0) return this;
 
     const canvasWidth = this.width;
     const canvasHeight = this.height;
@@ -603,6 +621,8 @@ export default class ObsiGraph implements ObsiGraphType {
 
     this.graphContainer.position.set(tx, ty);
     this.graphContainer.scale.set(k);
+
+    return this;
   }
 
   private autoEnableCulling(): void {

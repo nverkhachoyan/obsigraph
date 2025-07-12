@@ -1,4 +1,4 @@
-export const graph = {
+export default {
     "nodes": [
       { "id": 1, "label": "JavaScript", "url": "https://en.wikipedia.org/wiki/JavaScript" },
       { "id": 2, "label": "Web Development", "url": "https://en.wikipedia.org/wiki/Web_development" },

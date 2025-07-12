@@ -28,6 +28,9 @@ export interface Graph {
 export interface ColorOptions {
   node: string;
   nodeStroke: string;
+  nodeDimmed: string;
+  nodeDimmedStroke: string;
+  nodeHighlightStroke: string;
   nodeFont: string;
   edge: string;
   nodeHighlight: string;

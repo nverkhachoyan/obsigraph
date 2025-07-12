@@ -1,4 +1,4 @@
-export const graph = {
+export default  {
   nodes: [
     // Category Headers (IDs 1-20)
     { id: 1, label: "Algorithms", url: "https://cs-topics.org/algorithms" },
