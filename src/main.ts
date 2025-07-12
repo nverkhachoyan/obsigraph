@@ -51,6 +51,8 @@ export default class ObsiGraph implements ObsiGraphType {
   private _tweenGroup = new Group();
   private hasChanged: boolean = true;
   private wheelHandler: (event: WheelEvent) => void = () => {};
+  private adjacencyMap: Map<string | number, Set<string | number>> = new Map();
+  private previouslyHoveredNode: Node | null = null;
 
   private viewportBounds: {
     left: number;
@@ -84,6 +86,7 @@ export default class ObsiGraph implements ObsiGraphType {
     this.calculateNodeDegrees();
     this.calculateNodeSizes();
     this.updateEdgeReferences();
+    this.buildAdjacencyMap();
     if(this.options.culling?.autoEnable) this.autoEnableCulling();
     this.createPixiGraph();
     this.startSimulation();
@@ -341,15 +344,19 @@ export default class ObsiGraph implements ObsiGraphType {
     graphics
         .on('pointerover', () => {
             if (this.draggedNode) return;
+            this.previouslyHoveredNode = this.hoveredNode;
             this.hoveredNode = node;
             this.updateNodeAppearances();
+            this.updateHoverStyles();
         })
         .on('pointerout', () => {
             if (this.draggedNode) return;
+            this.previouslyHoveredNode = this.hoveredNode;
             this.hoveredNode = null;
             this.updateNodeAppearances();
+            this.updateHoverStyles();
         })
-        .on('pointerdown', onDragStart);
+        .on('pointerdown', onDragStart)
   }
 
   private onNodeClick(node: Node) {
@@ -375,6 +382,7 @@ export default class ObsiGraph implements ObsiGraphType {
 
         this.updateNodePositions();
         this.redrawEdges();
+ 
         this._tweenGroup.update();
     
         this.app.renderer.render(this.app.stage);
@@ -413,11 +421,60 @@ export default class ObsiGraph implements ObsiGraphType {
         }
     });
 
-    this.updateLabels();
-
+ 
     if(needsRender){
       this.app.renderer.render(this.app.stage);
     }
+  }
+
+  private updateHoverStyles() {
+    const nodesToUpdate = new Set<Node>();
+
+    if (this.previouslyHoveredNode) {
+        nodesToUpdate.add(this.previouslyHoveredNode);
+        this.adjacencyMap.get(this.previouslyHoveredNode.id)?.forEach(neighborId => {
+            const neighborNode = this.nodes.find(n => n.id === neighborId);
+            if (neighborNode) nodesToUpdate.add(neighborNode);
+        });
+    }
+
+    if (this.hoveredNode) {
+        nodesToUpdate.add(this.hoveredNode);
+        this.adjacencyMap.get(this.hoveredNode.id)?.forEach(neighborId => {
+            const neighborNode = this.nodes.find(n => n.id === neighborId);
+            if (neighborNode) nodesToUpdate.add(neighborNode);
+        });
+    }
+
+    this.nodes.forEach(node => {
+        const label = this.nodeLabels.get(node.id);
+        if (!label) return;
+
+        let finalAlpha = 1;
+        let fontSize = 8;
+        const isHovered = this.hoveredNode?.id === node.id;
+
+        if (this.hoveredNode) {
+            const isConnected = this.areNodesConnected(this.hoveredNode, node);
+            if (isHovered || isConnected) {
+                finalAlpha = 1;
+                if(isHovered) fontSize = 24;
+            } else {
+                finalAlpha = 0.2;
+            }
+        }
+        
+        const alphaTween = new Tween(label, this._tweenGroup)
+            .to({ alpha: finalAlpha }, 150)
+            .start();
+        this._tweenGroup.add(alphaTween);
+        
+        const fontTween = new Tween(label.style, this._tweenGroup)
+            .to({ fontSize }, 150)
+            .start();
+        this._tweenGroup.add(fontTween);
+    });
+    this.hasChanged = true;
   }
 
   private startSimulation() {
@@ -448,10 +505,15 @@ export default class ObsiGraph implements ObsiGraphType {
   }
 
   private updateNodePositions() {
+    const zoomLevel = this.graphContainer.scale.x;
+    const zoomThreshold = this.options.interaction.labelShowThreshold;
+
     this.nodes.forEach(node => {
       const graphics = this.nodeGraphics.get(node.id);
       const label = this.nodeLabels.get(node.id);
       const isVisible = this.cullingEnabled ? this.visibleNodes.has(node.id) : true;
+     
+
       
       if (graphics) {
         graphics.visible = isVisible;
@@ -461,72 +523,15 @@ export default class ObsiGraph implements ObsiGraphType {
       }
       
       if (label) {
-        if (isVisible) {
-          if (node.x && node.y) {
-            label.position.set(node.x, node.y + node.size + 4);
-          }
-        } else {
-            label.visible = false;
-        }
-      }
-    });
-  }
-
-  private updateLabels() {
-    const zoomLevel = this.graphContainer.scale.x;
-    const zoomThreshold = 0.4;
-
-    this.nodes.forEach(node => {
-        const label = this.nodeLabels.get(node.id);
-        if (!label) return;
-
-        const isHovered = this.hoveredNode?.id === node.id;
-        
-        let isVisible = zoomLevel > zoomThreshold;
-        let finalAlpha = 1;
-
-        if (this.hoveredNode) {
-            const isConnected = this.areNodesConnected(this.hoveredNode, node);
-            if (isHovered || isConnected) {
-                isVisible = true;
-            } else {
-                finalAlpha = 0.2;
-            }
-        }
-        
-        label.visible = isVisible;
+        const isLabelVisible = zoomLevel > zoomThreshold;
+        label.visible = isVisible && isLabelVisible;
 
         if (label.visible) {
-            const fontSize = isHovered ? 24 : 8;
-
-            if (this.options.disableTransitions) {
-                label.alpha = finalAlpha;
-                label.style.fontSize = fontSize;
-            } else {
-                const alphaTween = new Tween(label, this._tweenGroup)
-                    .to({ alpha: finalAlpha }, 150)
-                    .start();
-                this._tweenGroup.add(alphaTween);
-                this.hasChanged = true;
-                
-                const fontTween = new Tween(label.style, this._tweenGroup)
-                    .to({ fontSize }, 150)
-                    .start();
-                this._tweenGroup.add(fontTween);
-                this.hasChanged = true;
-            }
-
-        } else {
-            if (this.options.disableTransitions) {
-                label.alpha = 0;
-            } else {
-                const alphaTween = new Tween(label, this._tweenGroup)
-                    .to({ alpha: 0 }, 150)
-                    .start();
-                this._tweenGroup.add(alphaTween);
-                this.hasChanged = true;
+            if (node.x && node.y) {
+                label.position.set(node.x, node.y + node.size + 4);
             }
         }
+      }
     });
   }
 
@@ -545,10 +550,24 @@ export default class ObsiGraph implements ObsiGraphType {
   private areNodesConnected(nodeA: Node, nodeB: Node): boolean {
     if (!nodeA || !nodeB) return false;
     if (nodeA.id === nodeB.id) return false;
-    return this.edges.some(edge => 
-        ((edge.source as Node).id === nodeA.id && (edge.target as Node).id === nodeB.id) ||
-        ((edge.source as Node).id === nodeB.id && (edge.target as Node).id === nodeA.id)
-    );
+    return this.adjacencyMap.get(nodeA.id)?.has(nodeB.id) ?? false;
+  }
+
+  private buildAdjacencyMap() {
+    this.adjacencyMap.clear();
+    this.edges.forEach(edge => {
+        const sourceId = typeof edge.source === 'object' ? (edge.source as Node).id : edge.source;
+        const targetId = typeof edge.target === 'object' ? (edge.target as Node).id : edge.target;
+
+        if (!this.adjacencyMap.has(sourceId)) {
+            this.adjacencyMap.set(sourceId, new Set());
+        }
+        if (!this.adjacencyMap.has(targetId)) {
+            this.adjacencyMap.set(targetId, new Set());
+        }
+        this.adjacencyMap.get(sourceId)!.add(targetId);
+        this.adjacencyMap.get(targetId)!.add(sourceId);
+    });
   }
 
   public zoomToFit() {
@@ -783,6 +802,7 @@ export default class ObsiGraph implements ObsiGraphType {
     this.calculateNodeDegrees();
     this.calculateNodeSizes();
     this.updateEdgeReferences();
+    this.buildAdjacencyMap();
     this.createPixiGraph();
     this.startSimulation();
 

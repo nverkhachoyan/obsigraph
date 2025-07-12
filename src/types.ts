@@ -55,6 +55,7 @@ export interface SimulationOptions {
 export interface InteractionOptions {
   zoomMin: number;
   zoomMax: number;
+  labelShowThreshold: number;
 }
 
 export interface CullingOptions {

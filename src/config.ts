@@ -1,7 +1,7 @@
 import { ObsiGraphOptions } from "./types";
 
 export const GRAPH_DEFAULTS: ObsiGraphOptions = {
-  initialZoomFactor: 0.7,
+  initialZoomFactor: 0.9,
   zoomToFit: false,
   nodesHaveLinks: false,
   colors: {
@@ -30,7 +30,7 @@ export const GRAPH_DEFAULTS: ObsiGraphOptions = {
   },
   simulation: {
     linkDistance: 150,
-    linkStrength: 0.2,
+    linkStrength: 0.8,
     chargeStrength: -300,
     collisionStrength: 0.2,
     alpha: 0.9,
@@ -38,8 +38,9 @@ export const GRAPH_DEFAULTS: ObsiGraphOptions = {
     simulationDelay: 10000,
   },
   interaction: {
-    zoomMin: 0.01,
+    zoomMin: 0.2,
     zoomMax: 5,
+    labelShowThreshold: 0.8,
   },
   culling: {
     enabled: true,
@@ -49,5 +50,5 @@ export const GRAPH_DEFAULTS: ObsiGraphOptions = {
     edgeThreshold: 2000,
   },
   font: 'sans-serif',
-  disableTransitions: false,
+  disableTransitions: true,
 };
