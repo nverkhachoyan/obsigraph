@@ -110,6 +110,8 @@ export default class ObsiGraph implements ObsiGraphType {
 
   private async _initializeGraphComponents() {
     await this.setupCanvas();
+    this.setTheme(this.theme);
+    
     this.calculateNodeDegrees();
     this.calculateNodeSizes();
     this.updateEdgeReferences();
@@ -549,6 +551,7 @@ export default class ObsiGraph implements ObsiGraphType {
       const graphics = this.nodeGraphics.get(node.id);
       const label = this.nodeLabels.get(node.id);
       const isVisible = this.cullingEnabled ? this.visibleNodes.has(node.id) : true;
+      const isHoveredGroup = this.hoveredNode?.id === node.id || (this.hoveredNode && this.areNodesConnected(this.hoveredNode, node));
       
       if (graphics) {
         graphics.visible = isVisible;
@@ -558,7 +561,7 @@ export default class ObsiGraph implements ObsiGraphType {
       }
       
       if (label) {
-        const isLabelVisible = zoomLevel > zoomThreshold;
+        const isLabelVisible = isHoveredGroup || zoomLevel > zoomThreshold;
         label.visible = isVisible && isLabelVisible;
 
         if (label.visible) {

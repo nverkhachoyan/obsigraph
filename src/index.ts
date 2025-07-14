@@ -11,6 +11,7 @@ async function initializeGraph() {
       graph.edges as Edge[]
     );
     (window as any).obsigraph = obsigraph;
+    obsigraph.setTheme("light");
   } else {
     console.error('Could not find #graph-network container');
   }
