@@ -79,13 +79,13 @@ export default class ObsiGraph implements ObsiGraphType {
   private linkForce: ForceLink<Node, Edge> | undefined;
   private chargeForce: ForceManyBody<Node> | undefined;
 
-  constructor(canvas: HTMLCanvasElement, nodes: any[], edges: any[], options?: ObsiGraphOptions) {
+  constructor(canvas: HTMLCanvasElement, nodes: Node[], edges: Edge[], options?: ObsiGraphOptions) {
     this.canvas = canvas;
     this.options = merge({}, GRAPH_DEFAULTS, options);
     this.cullingEnabled = this.options.culling!.enabled;
     
     this.nodes = nodes.map(d => ({ ...d, size: 0 }));
-    this.edges = edges;
+    this.edges = edges.map(e => ({ ...e }));
 
     this.init();
   }
