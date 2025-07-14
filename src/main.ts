@@ -126,6 +126,7 @@ export default class ObsiGraph implements ObsiGraphType {
     });
 
     this.graphContainer = new PIXI.Container();
+    this.graphContainer.position.set(this.width / 2, this.height / 2);
     this.graphContainer.isRenderGroup = true;
     this.app.stage.addChild(this.graphContainer);
 
