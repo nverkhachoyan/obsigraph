@@ -68,6 +68,7 @@ export interface CullingOptions {
 }
 
 export interface ObsiGraphOptions {
+  theme: 'light' | 'dark';
   initialZoomFactor: number;
   zoomToFit: boolean;
   font: string;

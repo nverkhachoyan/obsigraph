@@ -14,6 +14,7 @@ import { GRAPH_DEFAULTS } from './config';
 import { Node, Edge, ObsiGraphOptions } from './types';
 import { merge } from 'lodash';
 import { throttle } from 'lodash';
+import ResizeObserver from 'resize-observer-polyfill';
 
 interface ObsiGraphType {
   nodes: Node[];
@@ -62,6 +63,7 @@ export default class ObsiGraph implements ObsiGraphType {
   private wheelHandler: (event: WheelEvent) => void = () => {};
   private adjacencyMap: Map<string | number, Set<string | number>> = new Map();
   private previouslyHoveredNode: Node | null = null;
+  private resizeObserver: ResizeObserver | null = null;
 
   private viewportBounds: {
     left: number;
@@ -83,14 +85,30 @@ export default class ObsiGraph implements ObsiGraphType {
     this.canvas = canvas;
     this.options = merge({}, GRAPH_DEFAULTS, options);
     this.cullingEnabled = this.options.culling!.enabled;
-    
+    this.theme = this.options.theme || "dark";
     this.nodes = nodes.map(d => ({ ...d, size: 0 }));
     this.edges = edges.map(e => ({ ...e }));
 
     this.init();
   }
 
-  private async init() {
+  private init() {
+    if (this.canvas.clientWidth > 0 && this.canvas.clientHeight > 0) {
+        this._initializeGraphComponents();
+    } else {
+        this.resizeObserver = new ResizeObserver((entries) => {
+            const entry = entries[0];
+            if (entry.contentRect.width > 0 && entry.contentRect.height > 0) {
+                this._initializeGraphComponents();
+                this.resizeObserver?.disconnect();
+                this.resizeObserver = null;
+            }
+        });
+        this.resizeObserver.observe(this.canvas);
+    }
+  }
+
+  private async _initializeGraphComponents() {
     await this.setupCanvas();
     this.calculateNodeDegrees();
     this.calculateNodeSizes();
