@@ -121,7 +121,7 @@ export default class ObsiGraph implements ObsiGraphType {
     this.startSimulation();
     this.animate();
  
-    if (this.options.zoomToFit) {
+    if (this.options.containInView) {
       setTimeout(() => {
         this.zoomToFit();
       }, 500);

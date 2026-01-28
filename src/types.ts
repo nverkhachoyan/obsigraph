@@ -70,7 +70,7 @@ export interface CullingOptions {
 export interface ObsiGraphOptions {
   theme: 'light' | 'dark';
   initialZoomFactor: number;
-  zoomToFit: boolean;
+  containInView: boolean;
   font: string;
   nodesHaveLinks: boolean;
   colors: {

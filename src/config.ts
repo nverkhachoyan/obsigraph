@@ -2,8 +2,9 @@ import { ObsiGraphOptions } from "./types";
 
 export const GRAPH_DEFAULTS: ObsiGraphOptions = {
   initialZoomFactor: 0.9,
-  zoomToFit: false,
+  containInView: true,
   nodesHaveLinks: false,
+  theme: "dark",
   colors: {
     light: {
       node: 'rgb(73 77 83)',
